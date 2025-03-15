@@ -16,17 +16,17 @@ function adicionarAmigo(){
     if (nomes === '') {
         alert('Por favor, insira um nome válido')
     }   else {
-    console.log('O botão foi clicado!')
-    listaNomes.push(nomes)
-    listaAmigos.innerHTML =  listaNomes.map(nome => `<li>${nome}</li>`).join('');
-    console.log(listaNomes);
+        console.log('O botão foi clicado!')
+        listaNomes.push(nomes)
+        listaAmigos.innerHTML =  listaNomes.map(nome => `<li>${nome}</li>`).join('');
+        console.log(listaNomes);
 
-    let limparCampo = document.querySelector('#amigo')
-    limparCampo.value = '';
+        let limparCampo = document.querySelector('#amigo')
+        limparCampo.value = '';
 
-    contadorAmigos++;
-    console.log(listaAmigos);
-}
+        contadorAmigos++;
+        console.log(listaAmigos);
+    }
 }
 
 //sortear amigo
